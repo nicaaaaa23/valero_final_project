@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke; 
+}
+
+header {
+    background: url('') no-repeat center center;
+    background-size: cover;
+    color: white;
+    background-color: lightsteelblue;
+}
+
+footer {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#about-section,
+#contact-section {
+    display: none;
+    padding: 3rem 0;
+}
+
+#about-section img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about-section h2,
+#contact-section h2 {
+    margin-bottom: 20px;
+}
+
+#about-section p,
+#contact-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#contact-section form .form-group {
+    margin-bottom: 15px;
+}
+</style>
+<body>
+
+<!-- Header Section -->
+<header style="background-color: lightsteelblue;"class=" text-white text-center py-3">
+    <div class="container">
+        <h1 class="display-4">My Project</h1>
+        <p class="lead">HTML, CSS and BOOTSTRAP</p>
+    </div>
+</header>
+
+<!-- Navigation Bar -->
+<nav style="background-color: white;"class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="about-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about-section" class="text-center">
+    <div class="container">
+        <img src="valero_img.jpg" alt="Creator Picture">
+        <h2>Veronica Valero</h2>
+        <p>BS Information Technology<br>Sikat, Alfonso, Cavite<br>#09156076529</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact-section" class="text-center">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please fill out the form below:</p>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Main Section -->
+<main class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">PROJECTS</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://nicaaaaa23.github.io/resume/" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                    <img src="Resume.jpg" class="card-img-top" alt="...">
+                    <div style="background-color: #FFA07A;" class="card-body">
+                        <p class="card-text" style="color: white;">RESUME</p>
+                    </div>
+                  
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://nicaaaaa23.github.io/regform/" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                    <img src="Regform.jpg" class="card-img-top" alt="...">
+                    <div style="background-color: lightblue;" class="card-body">
+                        <p class="card-text" style="color: white;">CERTIFICATE OF REGISTRATION</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://nicaaaaa23.github.io/restaurant_menu/" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                    <img src="Pinoyresto.jpg" class="card-img-top" alt="...">
+                    <div style="background-color: #8FBC8B;" class="card-body">
+                        <p class="card-text" style="color: white;">PINOY RESTAURANT</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://nicaaaaa23.github.io/vshop/" class="card mb-4 shadow-sm text-decoration-none text-dark">
+                    <img src="Store.jpg" class="card-img-top" alt="...">
+                    <div style="background-color: SandyBrown;" class="card-body">
+                        <p class="card-text" style="color: white;">SARI-SARI STORE</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+</main>
+
+<!-- Footer Section -->
+<footer class="text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Webpage Projects. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('about-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('about-section').style.display = 'block';
+    });
+
+    document.getElementById('contact-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('contact-section').style.display = 'block';
+    });
+</script>
+</body>
+</html>
